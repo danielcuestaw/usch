@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { NAV_ITEMS, USC_LOGO_URL } from '../constants';
+import { NAV_ITEMS, USC_LOGO_URL, USC_LOGO2_URL  } from '../constants';
 import { SectionId } from '../types';
 
 interface NavbarProps {
@@ -23,26 +23,19 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onSectionChange }) => {
   return (
     <nav className="absolute top-0 left-0 w-full z-50 font-display pt-4 px-4">
       <div className="max-w-[1400px] mx-auto relative">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex items-center gap-8 h-20">
           
           {/* --- LOGO SECTION (RESTAURADA: FONDO BLANCO / ORIGINAL) --- */}
           {/* Esta sección vuelve a ser blanca con los colores institucionales originales, NO se toca */}
           <div 
-            className="flex-shrink-0 flex items-center gap-3 cursor-pointer bg-white/95 backdrop-blur-sm py-2 px-6 rounded-full shadow-lg border border-white/20 relative z-20 hover:scale-[1.02] transition-transform duration-300"
-            onClick={() => handleNavClick('home')}
+           onClick={() => handleNavClick('home')}
           >
             {/* Imagen del Logo (Colores originales) */}
             <img 
-              className="h-10 md:h-12 w-auto object-contain mix-blend-multiply" 
-              src={USC_LOGO_URL} 
+              className="h-16 md:h-20 w-auto object-contain mix-blend-multiply" 
+              src={USC_LOGO2_URL} 
               alt="Logo Universidad Santiago de Cali" 
             />
-
-            {/* Texto del Logo (Colores originales) */}
-            <div className="hidden sm:flex flex-col justify-center h-10 border-l-2 border-gray-300 pl-3">
-                <h1 className="text-[10px] font-bold text-usc-blue uppercase tracking-wide leading-tight">Facultad de</h1>
-                <h2 className="text-sm font-extrabold text-usc-red uppercase leading-none mt-0.5">Humanidades y Artes</h2>
-            </div>
           </div>
 
           {/* --- DESKTOP MENU (ESTILO OSCURO TRANSLÚCIDO) --- */}
