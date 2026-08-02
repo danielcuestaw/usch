@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Target, CheckCircle } from 'lucide-react';
+import { USC_QUIENES_SOMOS_URL } from '../constants';
 
 const AboutBooklet: React.FC = () => {
   const [showObjectives, setShowObjectives] = useState(false);
@@ -112,7 +113,7 @@ const AboutBooklet: React.FC = () => {
           className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-100 group h-64 md:h-80 w-full"
         >
           <img 
-            src="https://live.staticflickr.com/65535/54157746058_35cb2ab9ef_h.jpg" 
+            src={USC_QUIENES_SOMOS_URL}
             alt="Estudiantes Facultad Humanidades" 
             className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
           />

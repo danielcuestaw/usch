@@ -1,6 +1,7 @@
 import React from 'react';
 import { Phone, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { USC_DECANO_URL } from '../constants';
 
 const CoordinatorProfile: React.FC = () => {
   return (
@@ -20,7 +21,7 @@ const CoordinatorProfile: React.FC = () => {
           {/* Imagen */}
           <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full p-1 bg-white shadow-xl overflow-hidden">
             <img
-              src="https://www.usc.edu.co/wp-content/uploads/2025/04/Christian-Daniel-Marin-Franco-scaled.webp"
+              src={USC_DECANO_URL}
               alt="Christian Daniel Marín Franco"
               className="w-full h-full object-cover rounded-full hover:scale-105 transition-transform duration-700"
             />

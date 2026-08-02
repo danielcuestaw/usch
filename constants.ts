@@ -2,10 +2,30 @@ import { Users, Megaphone, Palette } from 'lucide-react';
 import { NavItem, Major } from './types';
 
 // User provided logo URL for Header (Navbar)
-export const USC_LOGO_URL = "https://www.comfenalcovalle.com.co/wp-content/uploads/2023/07/logo-universidad-santiago-de-cali-2.jpg";
+export const USC_LOGO_URL =  "/images/Logo.png";
+export const USC_LOGO2_URL =  "/images/Logo2.png";
 
 // User provided logo URL for Footer - Logo Acreditación Institucional
-export const USC_FOOTER_LOGO_URL = "https://irs.usc.edu.co/Logo-Acreditaci%C3%B3n-Institucional.png";
+export const USC_FOOTER_LOGO_URL = "/images/logo_acreditacion_institucional.webp";
+
+// Foto Decano
+export const USC_DECANO_URL = "/images/foto_coordinador_practicas.webp";
+
+// Imagen quienes somos 
+export const USC_QUIENES_SOMOS_URL = "/images/quienes_somos.webp";
+
+// Imagen convenio alcaldia 
+export const USC_CONVENIO_ALCALDIA_URL = "/images/foto_alcaldia_cali.webp";
+
+// Imagen convenio crecer en familia 
+export const USC_CONVENIO_CEF_URL = "/images/foto_ong_crecerenfamilia.webp";
+
+// Imagen convenio periodico el pais
+export const USC_CONVENIO_ELPAIS_URL = "/images/foto_periodico_elpais.webp";
+
+// Imagen convenio telepacifico
+export const USC_CONVENIO_TELEPACIFICO_URL = "/images/foto_telepacifico.webp";
+
 
 export const NAV_ITEMS: NavItem[] = [
   { id: 'home', label: 'Quiénes Somos' },
@@ -24,7 +44,7 @@ export const MAJORS: Major[] = [
     description: 'Gestión y desarrollo de procesos sociales comunitarios e individuales.',
     color: 'text-usc-blue',
     gradient: 'from-blue-600 to-usc-blue',
-    image: 'https://unimedios.usc.edu.co/wp-content/uploads/2025/09/Album-4.png',
+    image: '/images/trabajo_social_01.webp',
     slogan: '"Transformando realidades, tejiendo comunidad"'
   },
   {
@@ -34,7 +54,7 @@ export const MAJORS: Major[] = [
     description: 'Estrategias de comunicación, periodismo y medios digitales.',
     color: 'text-usc-red',
     gradient: 'from-red-500 to-usc-red',
-    image: 'https://unimedios.usc.edu.co/wp-content/uploads/2022/07/zumbido02.jpg',
+    image: '/images/comunicacion_social_01.webp',
     slogan: '"La voz que conecta, la historia que inspira"'
   },
   {
@@ -44,7 +64,7 @@ export const MAJORS: Major[] = [
     description: 'Creatividad estratégica, diseño de marcas y campañas publicitarias.',
     color: 'text-purple-600',
     gradient: 'from-indigo-500 to-purple-600',
-    image: 'https://scontent.fclo16-1.fna.fbcdn.net/v/t39.30808-6/629471587_872908962285213_3425649469645642610_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1_zEYOwMfJYQ7kNvwEIEnd2&_nc_oc=AdmkqK-z-cgPA0AjjT2pzWCaLAy237DwB-tMgsNwIglf5nwWNGU8W1QbWU-K5OH52d8&_nc_zt=23&_nc_ht=scontent.fclo16-1.fna&_nc_gid=kSNlWEpMvbuqLLeBPE77Tw&oh=00_AfuXwfhyPlec0UdLrAMBo2q7bDxGP7BXvd7bXFrFdYiCyw&oe=69968C32',
+    image: '/images/publicidad_01.webp',
     slogan: '"Creatividad que impacta, estrategias que trascienden"'
   }
 ];
