@@ -2,17 +2,29 @@
  * DATOS DE FORMATOS ACADÉMICOS PARA DESCARGA Y ENLACES PDF
  */
 import { DownloadFormat } from '../types';
+import { 
+USC_FORMATO_SALIDAS_ACADEMICAS_URL,
+USC_FORMATO_ASISTENCIA_SALIDAS_URL,
+USC_FORMATO_REG_OPERADOR_URL,
+USC_FORMATO_ENCUESTA_SATISFACCION_URL,
+USC_FORMATO_RESP_MENORES_EDAD_URL,
+USC_FORMATO_CONVENIO_MACRO_PRACTICAS_URL,
+USC_FORMATO_HOJA_VIDA_INST_URL,
+USC_FORMATO_ARL_URL,
+USC_FORMATO_CONVENIO_ESPECIFICO_URL
+} from '../constants';
 
 export const DOWNLOAD_FORMATS: DownloadFormat[] = [
-    { id: 1, name: "Salidas académicas", url: "https://www.usc.edu.co/wp-content/uploads/2022/11/FORMATO_SALIDAS_ACADMICAS_16072019-USC.doc" },
-    { id: 2, name: "Formato de asistencia", url: "https://www.usc.edu.co/wp-content/uploads/2022/11/R-FORMATO-DE-ASISTENCIA-SALIDAS_ACADMICAS_16072019_-USC-1.xlsx" },
-    { id: 3, name: "Registro del Operador", url: "https://www.usc.edu.co/wp-content/uploads/2022/11/Formato_Registro_del_Operador_16072019-USC-1.doc" },
-    { id: 4, name: "Encuesta de Satisfacción", url: "https://www.usc.edu.co/wp-content/uploads/2022/11/Encuesta_de_Satisfaccin_16072019-USC.doc" },
-    { id: 5, name: "Formato de Responsabilidad para Estudiantes Menores de Edad", url: "https://www.usc.edu.co/wp-content/uploads/2022/11/Formato_de_Responsabilidad_menores_de_edad_22062019-USC.doc" },
-    { id: 6, name: "Modelo de Convenio Marco de Prácticas y Pasantías", url: "https://usceduco7466-my.sharepoint.com/:w:/g/personal/gabriela_caicedo03_usc_edu_co/IQCS7tBJs2XATYV7HL0It0IXAV5-fmHaN4s-LvKp3g4TgwM?e=D4EVy9" },
-    { id: 7, name: "Modelo Hoja de Vida Institucional Para Prácticas", url: "https://usceduco7466-my.sharepoint.com/:w:/g/personal/gabriela_caicedo03_usc_edu_co/IQDVODxvinLiRba3ludsqDoHAVkIUd2O5uk605gATtO-UCM?e=7JmU7L" },
-    { id: 8, name: "Formato ARL", url: "https://usceduco7466-my.sharepoint.com/:x:/g/personal/gabriela_caicedo03_usc_edu_co/IQDocYjXbRyEQo5Mgi4MDdDUAeBAod0Q9vgvLfE7QUZ5KQY?e=fsfb5u" }
-];
+    { id: 1, name: "Salidas académicas", url: USC_FORMATO_SALIDAS_ACADEMICAS_URL },
+    { id: 2, name: "Formato de asistencia", url: USC_FORMATO_ASISTENCIA_SALIDAS_URL },
+    { id: 3, name: "Registro del Operador", url: USC_FORMATO_REG_OPERADOR_URL },
+    { id: 4, name: "Encuesta de Satisfacción", url: USC_FORMATO_ENCUESTA_SATISFACCION_URL },
+    { id: 5, name: "Formato de Responsabilidad para Estudiantes Menores de Edad", url: USC_FORMATO_RESP_MENORES_EDAD_URL},
+    { id: 6, name: "Modelo de Convenio Marco de Prácticas y Pasantías", url: USC_FORMATO_CONVENIO_MACRO_PRACTICAS_URL },
+    { id: 7, name: "Modelo convenio específico", url:USC_FORMATO_CONVENIO_ESPECIFICO_URL },
+    { id: 8, name: "Modelo Hoja de Vida Institucional Para Prácticas", url: USC_FORMATO_HOJA_VIDA_INST_URL },
+    { id: 9, name: "Formato ARL", url: USC_FORMATO_ARL_URL }
+]; 
 
 // URLs Constantes para los libros PDF principales
 export const PDF_URLS = {
