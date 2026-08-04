@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import { USC_FOOTER_LOGO_URL } from '../constants';
 
 // WhatsApp Icon Component (Inline SVG for accurate branding)
@@ -68,7 +68,19 @@ const Footer: React.FC = () => {
                     <span className="text-sm md:text-base font-medium tracking-wide break-all">practicasfha@usc.edu.co</span>
                 </a>
 
+                {/* Extensión */}
+                <a
+                  href="tel:+576025183000,,9080"
+                  className="flex items-center gap-3 text-gray-300 hover:text-white transition-all duration-300 group"
+                >
+                  <div className="p-2 rounded-full bg-white/5 group-hover:bg-usc-red/80 transition-colors shadow-lg border border-white/5">
+                  <Phone size={16} className="fill-current" />
+                  </div>
+                  <span>602 518 3000 Ext. 9080</span>
+                </a>
+
                 {/* WhatsApp */}
+                {/* Se inhabilita temporalmente el whasap porque el numero de telefono fue cancelado
                 <a 
                     href="https://wa.me/573206728517"
                     target="_blank" 
@@ -79,7 +91,7 @@ const Footer: React.FC = () => {
                         <WhatsAppIcon className="w-[20px] h-[20px]" />
                     </div>
                     <span className="text-sm md:text-base font-medium tracking-wide">+57 320 672 8517</span>
-                </a>
+                </a>*/}
             </div>
         </div>
         

@@ -6,7 +6,7 @@ Plataforma web para estudiantes de la Facultad de Humanidades y Artes de la Univ
 
 ## 🚀 Demo
 
-Desplegado en Vercel: [usc-humanidades.vercel.app](https://usc-humanidades.vercel.app)
+Desplegado en Vercel: [usc-practicas-humanidades-y-artes-2026b.vercel.app](https://usc-practicas-humanidades-y-artes-2026b.vercel.app/)
 
 ---
 
@@ -74,6 +74,8 @@ La app estará disponible en `http://localhost:5173`
 ## 🌐 Despliegue
 
 El proyecto usa **despliegue continuo con Vercel**. Cada vez que se hace un `git push` a la rama `main`, Vercel detecta el cambio y redespliega automáticamente.
+
+Por lo tanto el backend que esta en github esta vinculado con vercel, lo que permite una integracion continua.
 
 ```bash
 # Flujo de trabajo para subir cambios
