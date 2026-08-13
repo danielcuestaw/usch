@@ -462,5 +462,47 @@ export const FACULTY_AGREEMENTS_DATA: FacultyAgreement[] = [
         phone: "(602) 6618707, (602) 8879020, 01 8000 222 195",
         email: "pazyculturaciudadana@cali.gov.co, contactenos@cali.gov.co, nigeria.renteria@cali.gov.co",
         programs: "Publicidad"
+    },
+    {
+        id: 64,
+        name: "RIO ALICANTES S.A.S",
+        phone: "3206673296",
+        email: "hablandodemarcas@outlook.com",
+        programs: "Publicidad"
+    },
+    {
+        id: 65,
+        name: "DAC INGENIERIA S.A.S",
+        phone: "3167406019, (602)3865240",
+        email: "gerencia@dacingenieria.com",
+        programs: "Publicidad, Comunicación Social"
+    },
+    {
+        id: 66,
+        name: "QUESERA SALSAMENTARIA CHIMINANGOS",
+        phone: "3146440355, (602)4466561",
+        email: "queserasalsamentariachimi@gmail.com",
+        programs: "Publicidad, Comunicación Social"
+    },
+    {
+        id: 67,
+        name: "TECNO-CONTROL S.A.S.",
+        phone: "3046504186",
+        email: "frank@tecnocontrol.com.co",
+        programs: "Publicidad, Comunicación Social"
+    },
+    {
+        id: 68,
+        name: "HOTEL ESTEIN COLONIAL",
+        phone: "(602)4898898",
+        email: "gerencia@hotelsteincolonial.com",
+        programs: "Publicidad, Comunicación Social"
+    },
+    {
+        id: 69,
+        name: "GLOBAL SEIMOS S.A.S",
+        phone: "3105299959",
+        email: "juanse79393@gmail.com",
+        programs: "Publicidad, Comunicación Social"
     }
 ];
