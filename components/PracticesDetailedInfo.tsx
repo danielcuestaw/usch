@@ -178,49 +178,6 @@ const PracticesDetailedInfo: React.FC = () => {
           </div>
       </section>
 
-      {/* 4. SECCIÓN: PROCESO ADMINISTRATIVO */}
-      <div className="w-full">
-          
-          {/* PASO A PASO ADMINISTRATIVO */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 max-w-4xl mx-auto">
-              <div className="flex items-center gap-3 mb-6">
-                  <FileText size={28} className="text-usc-red" />
-                  <h3 className="text-xl font-bold font-display text-gray-800">Ruta Administrativa</h3>
-              </div>
-              
-              <ol className="relative border-l border-gray-200 ml-3 space-y-8">
-                  <li className="ml-6">
-                      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white">
-                          <span className="text-usc-blue font-bold text-xs">1</span>
-                      </span>
-                      <h4 className="font-bold text-gray-800 text-sm">Inducción y Seminarios</h4>
-                      <p className="text-xs text-gray-500 mt-1">Asistencia obligatoria a la inducción y aprobación de dos seminarios.</p>
-                  </li>
-                  <li className="ml-6">
-                      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white">
-                          <span className="text-usc-blue font-bold text-xs">2</span>
-                      </span>
-                      <h4 className="font-bold text-gray-800 text-sm">Paz y Salvo</h4>
-                      <p className="text-xs text-gray-500 mt-1">Estar matriculado financiera y académicamente. Sin deudas.</p>
-                  </li>
-                  <li className="ml-6">
-                      <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white">
-                          <span className="text-usc-blue font-bold text-xs">3</span>
-                      </span>
-                      <h4 className="font-bold text-gray-800 text-sm">Solicitud de ARL</h4>
-                      <p className="text-xs text-gray-500 mt-1">Tramitar afiliación a Riesgos Laborales antes de iniciar actividades.</p>
-                  </li>
-                  <li className="ml-6">
-                      <span className="absolute flex items-center justify-center w-6 h-6 bg-green-100 rounded-full -left-3 ring-8 ring-white">
-                          <CheckCircle size={14} className="text-green-600" />
-                      </span>
-                      <h4 className="font-bold text-gray-800 text-sm">Cierre y Calificación</h4>
-                      <p className="text-xs text-gray-500 mt-1">Carga de informes finales y evaluación en SIPPU para obtener nota.</p>
-                  </li>
-              </ol>
-          </div>
-
-      </div>
     </div>
   );
 };
