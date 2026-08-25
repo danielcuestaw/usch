@@ -34,7 +34,9 @@ export const USC_CONVENIO_TELEPACIFICO_URL = "/images/foto_telepacifico.webp";
 //Links de FORMATOS ACADEMICOS
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-// FORMATO 01: Pertenecen a la seccion de NORMATIVIDAD Y FORMATOS
+//SECCIÓN  NORMATIVIDAD Y FORMATOS
+// FORMATO 01
+
 //     Formato Salidas académicas 
  export const USC_FORMATO_SALIDAS_ACADEMICAS_URL= "/docs/formato_01_salidas_academicas.doc";
 
@@ -62,9 +64,15 @@ export const USC_FORMATO_HOJA_VIDA_INST_URL= "/docs/formato_01_modelo_hoja_vida_
 //     Formato ARL
 export const USC_FORMATO_ARL_URL= "/docs/formato_01_ARL.xlsx"
 
-
-//FORMATO 02: pertenece s la seccion de CIERRE DE PRACTICAS
+//SECCIÓN  CIERRE DE PRACTICAS
+//FORMATO 02
  export const USC_FORMATO_FINAL_PRACTICA_URL= "/docs/formato_02_informe_final_practica_estudiantes.docx";
+
+//SECCIÓN PROGRAMA ACADEMICO DE TRABAJO SOCIAL
+//Informativo 01
+export const USC_INFO_CURSO_TSOCIAL_URL= "/docs/informativo_01_Curso_Práctica_Trabajo_Social.pdf";
+
+export const USC_INFO_MANUL_PRACTICAS_TSOCIAL_URL= "/docs/informativo_01_manual_practicas_TSocial.pdf";
 
 export const NAV_ITEMS: NavItem[] = [
   { id: 'home', label: 'Quiénes Somos' },
