@@ -4,7 +4,7 @@ import {
   ArrowLeft, UserCog, Megaphone, PenTool, ChevronDown, FileText, CheckCircle, 
   Target, ShieldCheck, Download, Building, Layers, GitMerge
 } from 'lucide-react';
-import { MAJORS, USC_INFO_CURSO_TSOCIAL_URL, USC_INFO_MANUL_PRACTICAS_TSOCIAL_URL } from '../constants';
+import { MAJORS, USC_INFO_CURSO_TSOCIAL_URL, USC_INFO_MANUL_PRACTICAS_TSOCIAL_URL, USC_INFO_LINEAMIENTO_PRACTICA_TSOCIAL_URL } from '../constants';
 import { SectionId } from '../types';
 import MajorAgreementsTable from './MajorAgreementsTable';
 
@@ -157,7 +157,6 @@ const MajorDetail: React.FC<MajorDetailProps> = ({ majorId, onBack }) => {
                         </div>
                         <div>
                             <h4 className="font-bold text-gray-800 group-hover:text-usc-blue transition-colors mb-1">Presentación Curso Práctica</h4>
-                            <p className="text-xs text-gray-500 mb-2">Documento oficial con lineamientos y presentación completa.</p>
                             <span className="text-xs font-bold text-usc-red flex items-center gap-1">
                                 Descargar PDF <ChevronDown size={12} className="-rotate-90" />
                             </span>
@@ -176,12 +175,30 @@ const MajorDetail: React.FC<MajorDetailProps> = ({ majorId, onBack }) => {
                         </div>
                         <div>
                             <h4 className="font-bold text-gray-800 group-hover:text-usc-blue transition-colors mb-1">Manual de Prácticas de Trabajo Social</h4>
-                            <p className="text-xs text-gray-500 mb-2">Documento oficial con el manual de Prácticas de Trabajo Social.</p>
                             <span className="text-xs font-bold text-usc-red flex items-center gap-1">
                                 Descargar PDF <ChevronDown size={12} className="-rotate-90" />
                             </span>
                         </div>
                     </a>
+
+                     {/* Tarjeta #3 de Descarga PDF */}
+                    <a 
+                        href={USC_INFO_LINEAMIENTO_PRACTICA_TSOCIAL_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-usc-blue transition-all group flex items-start gap-4"
+                    >
+                        <div className="bg-red-50 text-red-600 p-3 rounded-lg group-hover:bg-red-100 transition-colors">
+                            <Download size={24} />
+                        </div>
+                        <div>
+                            <h4 className="font-bold text-gray-800 group-hover:text-usc-blue transition-colors mb-1">Lineamientos de la Práctica</h4>
+                            <span className="text-xs font-bold text-usc-red flex items-center gap-1">
+                                Descargar PDF <ChevronDown size={12} className="-rotate-90" />
+                            </span>
+                        </div>
+                    </a>
+
                 </div>
             </section>
 

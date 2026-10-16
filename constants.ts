@@ -74,6 +74,10 @@ export const USC_INFO_CURSO_TSOCIAL_URL= "/docs/informativo_01_Curso_Práctica_T
 
 export const USC_INFO_MANUL_PRACTICAS_TSOCIAL_URL= "/docs/informativo_01_manual_practicas_TSocial.pdf";
 
+export const USC_INFO_LINEAMIENTO_PRACTICA_TSOCIAL_URL= "/docs/informativo_01_lineamiento_practicas_TSocial.pdf";
+
+
+
 export const NAV_ITEMS: NavItem[] = [
   { id: 'home', label: 'Quiénes Somos' },
   { id: 'practices', label: 'Prácticas' },
