@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { NAV_ITEMS, USC_LOGO_URL, USC_LOGO2_URL  } from '../constants';
+import { NAV_ITEMS, USC_FOOTER_LOGO_URL, USC_LOGO2_URL  } from '../constants';
 import { SectionId } from '../types';
 
 interface NavbarProps {
@@ -83,6 +83,13 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection, onSectionChange }) => {
               {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
+
+          {/* Imagen de calidad institucional */}
+            <img 
+              className="h-20 sm:h-24 md:h-28 lg:h-32 w-auto object-contain mix-blend-multiply"
+              src={USC_FOOTER_LOGO_URL} 
+              alt="sello de la calidad institucional de la universidad de Santiago de Cali" 
+            />
         </div>
 
         {/* --- MOBILE MENU DROPDOWN --- */}
