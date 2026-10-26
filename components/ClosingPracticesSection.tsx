@@ -154,6 +154,9 @@ const ClosingPracticesSection: React.FC = () => {
               <h3 className="text-xl font-bold text-usc-blue mb-3 text-left">Paso 4. Solicitud del acta de cierre</h3>
               
               <div className="space-y-4 text-left">
+                <p className="bg-red-600 text-white text-sm font-bold px-4 py-2 rounded-md">
+                  Nota: Solo aplica para Comunicación y Publicidad
+                </p>
                 <p className="text-gray-600 text-sm text-justify leading-relaxed">
                   Una vez cumplidos los pasos anteriores, el estudiante debe solicitar formalmente el acta de cierre de prácticas enviando un correo electrónico a:
                 </p>
