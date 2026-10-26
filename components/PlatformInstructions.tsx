@@ -68,24 +68,15 @@ const PlatformInstructions: React.FC = () => {
         <div className="bg-gradient-to-r from-usc-blue to-usc-darkBlue p-8 text-white">
             <div className="flex items-center gap-4 mb-4">
                 <Monitor size={36} className="text-usc-red" />
-                <h3 className="text-2xl md:text-3xl font-display font-bold">Plan de Trabajo de Prácticas</h3>
+                <h3 className="text-2xl md:text-3xl font-display font-bold">Diligenciamiento del Portafolio Académico</h3>
             </div>
             <div className="space-y-4 text-white/90 leading-relaxed text-sm md:text-base">
                 <p>
-                    <strong>Aplicativo SIPPU – Registro y Cargue del Plan de Trabajo</strong>
+                    <strong>Aplicativo SIPPU  - Hoja de vida - Plan de trabajo - Seguimiento</strong>
                 </p>
                 <p>
-                    Dentro de la plataforma <strong>SIPAC</strong> se encuentra habilitado el aplicativo <strong>SIPPU</strong>, herramienta mediante la cual los estudiantes deben realizar el registro correspondiente a su práctica y el cargue del plan de trabajo.
+                    Dentro de la plataforma <strong>SIPAC</strong> se encuentra habilitado el aplicativo <strong>SIPPU</strong>, herramienta mediante la cual los estudiantes deben realizar el registro correspondiente a su práctica académica.
                 </p>
-                <p>
-                    En este espacio se publicará el instructivo oficial para:
-                </p>
-                <ul className="list-none space-y-2 pl-4 border-l-2 border-usc-red/50">
-                    <li className="flex items-center gap-2"><CheckCircle size={16} className="text-usc-red" /> Realizar el registro en el aplicativo SIPPU.</li>
-                    <li className="flex items-center gap-2"><CheckCircle size={16} className="text-usc-red" /> Diligenciar correctamente la información solicitada.</li>
-                    <li className="flex items-center gap-2"><CheckCircle size={16} className="text-usc-red" /> Cargar el plan de trabajo de práctica.</li>
-                    <li className="flex items-center gap-2"><CheckCircle size={16} className="text-usc-red" /> Verificar el estado de revisión y aprobación.</li>
-                </ul>
                 <div className="bg-white/10 p-4 rounded-lg border border-white/20 mt-6 flex gap-4 items-start">
                     <AlertCircle size={24} className="text-yellow-400 shrink-0 mt-1" />
                     <p className="text-xs md:text-sm font-medium">
