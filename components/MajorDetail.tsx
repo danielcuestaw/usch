@@ -4,7 +4,16 @@ import {
   ArrowLeft, UserCog, Megaphone, PenTool, ChevronDown, FileText, CheckCircle, 
   Target, ShieldCheck, Download, Building, Layers, GitMerge
 } from 'lucide-react';
-import { MAJORS, USC_INFO_CURSO_TSOCIAL_URL, USC_INFO_MANUL_PRACTICAS_TSOCIAL_URL, USC_INFO_LINEAMIENTO_PRACTICA_TSOCIAL_URL } from '../constants';
+import { MAJORS, 
+         USC_INFO_CURSO_TSOCIAL_URL, 
+         USC_INFO_MANUL_PRACTICAS_TSOCIAL_URL, 
+         USC_INFO_LINEAMIENTO_PRACTICA_TSOCIAL_URL,
+         USC_ICON_PRESENTACION_CURSO,
+         USC_ICON_MANUAL_CURSO,
+         USC_ICON_LINEAMIENTO_CURSO,
+         USC_BANNER_TRABAJO_SOCIAL,
+         USC_BANNER_COMUNICACION, 
+         USC_BANNER_PUBLICIDAD } from '../constants';
 import { SectionId } from '../types';
 import MajorAgreementsTable from './MajorAgreementsTable';
 
@@ -93,42 +102,35 @@ const MajorDetail: React.FC<MajorDetailProps> = ({ majorId, onBack }) => {
         <span>Volver al Inicio</span>
       </motion.button>
 
-      {/* Introducción de la Carrera */}
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="mb-8 text-center max-w-3xl mx-auto"
-      >
-        <div className={`inline-flex items-center justify-center p-3 rounded-full bg-gradient-to-br ${major.gradient} text-white shadow-lg mb-6`}>
-           <major.icon size={32} />
-        </div>
-        <h2 className="text-3xl md:text-4xl font-display font-extrabold text-gray-800 mb-2">
-          {major.name}
-        </h2>
-        <p className={`text-base font-bold text-transparent bg-clip-text bg-gradient-to-r ${major.gradient} mb-6`}>
-           {major.slogan}
-        </p>
-      </motion.div>
-
+        <img 
+             src={
+                    majorId === 'social-work' ? USC_BANNER_TRABAJO_SOCIAL :
+                    majorId === 'advertising' ? USC_BANNER_PUBLICIDAD :
+                    USC_BANNER_COMUNICACION
+                }
+            alt="Banner"
+            className="w-full rounded-2xl object-cover shadow-lg"
+            />
       {/* 
           ====================================================================================
           SECCIÓN: NIVELES DE PRÁCTICA (LISTA PUNTEADA SIMPLE)
           ====================================================================================
       */}
-      <div className="mb-12 max-w-3xl mx-auto px-4">
-        <h3 className="text-lg font-display font-bold text-gray-800 mb-3 text-left">
+
+      <div className="mt-10 mb-12 px-4">
+        <h3 className="text-2xl font-display font-bold text-gray-800 mb-4 text-left">
             Niveles de Práctica
         </h3>
         
-        <ul className="list-disc pl-5 space-y-2 text-gray-700 text-sm md:text-base">
+        <ul className="list-disc pl-5 space-y-2 text-gray-700 text-base md:text-lg">
             {currentLevels.map((level) => (
-                <li key={level.id}>
-                    <span className="font-bold">{level.title}</span>
-                    {level.desc && <span className="text-gray-600"> - {level.desc}</span>}
-                </li>
+            <li key={level.id}>
+                <span className="font-bold">{level.title}</span>
+                {level.desc && <span className="text-gray-600"> - {level.desc}</span>}
+            </li>
             ))}
         </ul>
-      </div>
+    </div>
 
       {/* ==================================================================================== */}
       {/* VISTA ESPECÍFICA: TRABAJO SOCIAL (VISTA DETALLADA PDF COMPLETO) */}
@@ -139,68 +141,63 @@ const MajorDetail: React.FC<MajorDetailProps> = ({ majorId, onBack }) => {
             
             {/* NUEVA SECCIÓN: FORMATOS Y RECURSOS ESPECÍFICOS */}
             <section className="bg-blue-50/50 rounded-2xl p-8 border border-blue-100">
-                <div className="flex items-center gap-3 mb-6">
-                    <FileText size={28} className="text-usc-blue" />
-                    <h3 className="text-2xl font-display font-bold text-gray-800">Formatos y Recursos de Apoyo</h3>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {/* Tarjeta #1 de Descarga PDF */}
-                    <a 
-                        href={USC_INFO_CURSO_TSOCIAL_URL}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-usc-blue transition-all group flex items-start gap-4"
-                    >
-                        <div className="bg-red-50 text-red-600 p-3 rounded-lg group-hover:bg-red-100 transition-colors">
-                            <Download size={24} />
-                        </div>
-                        <div>
-                            <h4 className="font-bold text-gray-800 group-hover:text-usc-blue transition-colors mb-1">Presentación Curso Práctica</h4>
-                            <span className="text-xs font-bold text-usc-red flex items-center gap-1">
-                                Descargar PDF <ChevronDown size={12} className="-rotate-90" />
-                            </span>
-                        </div>
-                    </a>
+  <div className="flex items-center gap-3 mb-6">
+    <FileText size={28} className="text-usc-blue" />
+    <h3 className="text-2xl font-display font-bold text-gray-800">Formatos y Recursos de Apoyo</h3>
+  </div>
+  
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    
+    {/* Tarjeta #1 */}
+    <a 
+      href={USC_INFO_CURSO_TSOCIAL_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-usc-blue transition-all group flex flex-col items-center text-center gap-4"
+    >
+      <img src={USC_ICON_PRESENTACION_CURSO} alt="Icono" className="h-20 w-20 object-contain" />
+      <div>
+        <h4 className="font-bold text-gray-800 group-hover:text-usc-blue transition-colors mb-1">Presentación Curso Práctica</h4>
+        <span className="text-xs font-bold text-usc-red flex items-center justify-center gap-1">
+          Descargar PDF <ChevronDown size={12} className="-rotate-90" />
+        </span>
+      </div>
+    </a>
 
-                    {/* Tarjeta #2 de Descarga PDF */}
-                    <a 
-                        href= {USC_INFO_MANUL_PRACTICAS_TSOCIAL_URL}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-usc-blue transition-all group flex items-start gap-4"
-                    >
-                        <div className="bg-red-50 text-red-600 p-3 rounded-lg group-hover:bg-red-100 transition-colors">
-                            <Download size={24} />
-                        </div>
-                        <div>
-                            <h4 className="font-bold text-gray-800 group-hover:text-usc-blue transition-colors mb-1">Manual de Prácticas de Trabajo Social</h4>
-                            <span className="text-xs font-bold text-usc-red flex items-center gap-1">
-                                Descargar PDF <ChevronDown size={12} className="-rotate-90" />
-                            </span>
-                        </div>
-                    </a>
+    {/* Tarjeta #2 */}
+    <a 
+      href={USC_INFO_MANUL_PRACTICAS_TSOCIAL_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-usc-blue transition-all group flex flex-col items-center text-center gap-4"
+    >
+      <img src={USC_ICON_MANUAL_CURSO} alt="Icono" className="h-20 w-20 object-contain" />
+      <div>
+        <h4 className="font-bold text-gray-800 group-hover:text-usc-blue transition-colors mb-1">Manual de Prácticas de Trabajo Social</h4>
+        <span className="text-xs font-bold text-usc-red flex items-center justify-center gap-1">
+          Descargar PDF <ChevronDown size={12} className="-rotate-90" />
+        </span>
+      </div>
+    </a>
 
-                     {/* Tarjeta #3 de Descarga PDF */}
-                    <a 
-                        href={USC_INFO_LINEAMIENTO_PRACTICA_TSOCIAL_URL}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-usc-blue transition-all group flex items-start gap-4"
-                    >
-                        <div className="bg-red-50 text-red-600 p-3 rounded-lg group-hover:bg-red-100 transition-colors">
-                            <Download size={24} />
-                        </div>
-                        <div>
-                            <h4 className="font-bold text-gray-800 group-hover:text-usc-blue transition-colors mb-1">Lineamientos de la Práctica</h4>
-                            <span className="text-xs font-bold text-usc-red flex items-center gap-1">
-                                Descargar PDF <ChevronDown size={12} className="-rotate-90" />
-                            </span>
-                        </div>
-                    </a>
+    {/* Tarjeta #3 */}
+    <a 
+      href={USC_INFO_LINEAMIENTO_PRACTICA_TSOCIAL_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-white p-5 rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-usc-blue transition-all group flex flex-col items-center text-center gap-4"
+    >
+      <img src={USC_ICON_LINEAMIENTO_CURSO} alt="Icono" className="h-20 w-20 object-contain" />
+      <div>
+        <h4 className="font-bold text-gray-800 group-hover:text-usc-blue transition-colors mb-1">Lineamientos de la Práctica</h4>
+        <span className="text-xs font-bold text-usc-red flex items-center justify-center gap-1">
+          Descargar PDF <ChevronDown size={12} className="-rotate-90" />
+        </span>
+      </div>
+    </a>
 
-                </div>
-            </section>
+  </div>
+</section>
 
             {/* 1. COMPETENCIAS (ROL) - TEXTO COMPLETO */}
             <section className="bg-white rounded-2xl shadow-md border-l-4 border-usc-blue p-8">
@@ -224,72 +221,7 @@ const MajorDetail: React.FC<MajorDetailProps> = ({ majorId, onBack }) => {
                 </div>
             </section>
 
-            {/* 2. CARACTERÍSTICAS DE LA PRÁCTICA - LISTADO COMPLETO */}
-            <section>
-                <h3 className="text-xl font-bold text-gray-800 mb-6 text-center">Características de la Práctica</h3>
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        {[
-                            "Reglamentada: Reglamento de Prácticas.",
-                            "Establecimiento de convenios / contratos con escenarios de práctica.",
-                            "No. estudiantes asignados a escenarios de práctica.",
-                            "1 profesor (tutor/asesor de práctica).",
-                            "1 profesional de campo en cada escenario de práctica.",
-                            "Programa académico de Trabajo Social como contexto disciplinar y profesional.",
-                            "Proceso evaluado y calificado.",
-                            "Tiempo: Dos periodos académicos.",
-                            "Tiempo: 24 horas por semana."
-                        ].map((char, idx) => (
-                            <li key={idx} className="flex items-start gap-3 text-sm text-gray-700">
-                                <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-usc-blue shrink-0"></div>
-                                <span>{char}</span>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </section>
-
-            {/* 3. ACTORES DE LA PRÁCTICA - LISTADO COMPLETO */}
-            <section>
-                <div className="text-center mb-8">
-                    <h3 className="text-2xl font-display font-bold text-gray-800">Actores de la Práctica</h3>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {/* Institucional */}
-                    <div className="bg-gray-50 p-5 rounded-xl border border-gray-200">
-                        <h4 className="font-bold text-usc-blue mb-3 border-b border-gray-200 pb-2">Institucional</h4>
-                        <ul className="space-y-2 text-sm text-gray-600">
-                            <li>• USC</li>
-                            <li>• Programa Académico</li>
-                            <li>• Docente de Práctica (asesor/tutor)</li>
-                            <li>• Coordinación de prácticas FHYA</li>
-                        </ul>
-                    </div>
-                    {/* Escenario */}
-                    <div className="bg-gray-50 p-5 rounded-xl border border-gray-200">
-                        <h4 className="font-bold text-usc-blue mb-3 border-b border-gray-200 pb-2">Escenario</h4>
-                        <ul className="space-y-2 text-sm text-gray-600">
-                            <li>• Profesional de Campo de Práctica</li>
-                            <li>• O. Gubernamentales</li>
-                            <li>• O. No Gubernamentales</li>
-                            <li>• O. Comunitarias</li>
-                            <li>• Empresas</li>
-                            <li>• Grupos de Investigación</li>
-                        </ul>
-                    </div>
-                    {/* Sujetos */}
-                    <div className="bg-gray-50 p-5 rounded-xl border border-gray-200">
-                        <h4 className="font-bold text-usc-blue mb-3 border-b border-gray-200 pb-2">Sujetos y Procesos</h4>
-                        <ul className="space-y-2 text-sm text-gray-600">
-                            <li>• Estudiantes</li>
-                            <li>• Poblaciones</li>
-                            <li>• Procesos, Programas, Proyectos</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            {/* 4. DIMENSIONES DE LA PRÁCTICA */}
+            {/* 2. DIMENSIONES DE LA PRÁCTICA */}
             <section className="bg-slate-50 rounded-2xl p-8 border border-slate-200">
                 <div className="text-center mb-8">
                     <h3 className="text-2xl font-display font-bold text-gray-800">Dimensiones de la Práctica</h3>
@@ -323,7 +255,7 @@ const MajorDetail: React.FC<MajorDetailProps> = ({ majorId, onBack }) => {
                 </div>
             </section>
 
-            {/* 5. PROCESO METODOLÓGICO (TIMELINE) */}
+            {/* 3. PROCESO METODOLÓGICO (TIMELINE) */}
             <section>
                 <div className="flex items-center gap-3 mb-8">
                     <GitMerge size={28} className="text-usc-red" />
@@ -387,7 +319,7 @@ const MajorDetail: React.FC<MajorDetailProps> = ({ majorId, onBack }) => {
                 </div>
             </section>
 
-            {/* 6. APORTES Y GESTIÓN DE PRACTICANTES - LISTADO COMPLETO */}
+            {/* 4. APORTES Y GESTIÓN DE PRACTICANTES - LISTADO COMPLETO */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
                 {/* Aportes */}

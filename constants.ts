@@ -5,6 +5,16 @@ import { NavItem, Major } from './types';
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 //Links de IMAGENES Y LOGOS
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//iconos    
+export const USC_ICON_PRESENTACION_CURSO =  "/images/Icono_presentacion.png";
+export const USC_ICON_MANUAL_CURSO =  "/images/Icono_manual.png";
+export const USC_ICON_LINEAMIENTO_CURSO =  "/images/Icono_lineamiento.png";
+
+//banners
+export const USC_BANNER_TRABAJO_SOCIAL =  "/images/Banner_trabajo_social.png";
+export const USC_BANNER_COMUNICACION = "/images/Banner_comunicacion.png";
+export const USC_BANNER_PUBLICIDAD = "/images/Banner_publicidad.png";
+
 // User provided logo URL for Header (Navbar)
 export const USC_LOGO_URL =  "/images/Logo.png";
 export const USC_LOGO2_URL =  "/images/Logo2.png";
