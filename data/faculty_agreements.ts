@@ -504,5 +504,12 @@ export const FACULTY_AGREEMENTS_DATA: FacultyAgreement[] = [
         phone: "3105299959",
         email: "juanse79393@gmail.com",
         programs: "Publicidad, Comunicación Social"
+    },
+    {
+        id: 70,
+        name: "COLEGIO LOS ANDES",
+        phone: "3206873512",
+        email: "sgsstcolegiolosandes@gmail.com",
+        programs: "Trabajo Social"
     }
 ];
