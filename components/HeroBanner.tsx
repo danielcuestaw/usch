@@ -71,44 +71,8 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ activeSection }) => {
       </style>
 
       {/* Reduced height from h-[600px]/h-[700px] to h-[450px]/h-[550px] to simulate "zoomed out" view */}
-      <div className="relative w-full h-[450px] md:h-[550px] overflow-hidden flex items-center justify-center lava-gradient">
+      <div className="relative w-full h-[200px] md:h-[220px] overflow-hidden flex items-center justify-center lava-gradient">
         
-        {/* Main Text Content - Adjusted pt for new height */}
-        <div className="relative z-10 text-center px-4 pt-10">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeSection} // Re-run animation when section changes
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.6, ease: "backOut" }}
-              className="flex flex-col items-center"
-            >
-              <span className="inline-block py-1 px-3 border border-white/30 rounded-full text-white/90 text-xs md:text-sm font-display font-medium tracking-widest mb-4 uppercase backdrop-blur-sm bg-white/5">
-                Facultad de Humanidades y Artes
-              </span>
-              
-              {/* Added text-glow class here and adjusted font size for longer text */}
-              <h1 className="text-4xl md:text-6xl font-black text-white font-display tracking-tight drop-shadow-2xl mb-4 text-glow uppercase">
-                PRÁCTICAS
-              </h1>
-              
-              {/* Dynamic Subtitle Container */}
-              <div className="flex flex-col items-center gap-2 mt-2">
-                {/* Section Title: Italicized */}
-                <span className="text-gray-100 text-2xl md:text-4xl font-serif italic tracking-wide drop-shadow-md text-center max-w-4xl">
-                  {content.subtitle}
-                </span>
-                
-                {/* Slogan: Smaller, Not Italic, Quotes, Tone Change */}
-                <span className="text-white/70 text-xs md:text-sm font-sans font-medium tracking-[0.2em] not-italic uppercase opacity-90 text-center max-w-3xl">
-                  {content.slogan}
-                </span>
-              </div>
-
-            </motion.div>
-          </AnimatePresence>
-        </div>
 
         {/* Animated Wave Bottom */}
         <div className="absolute -bottom-1 left-0 w-full leading-none overflow-hidden">
