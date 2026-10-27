@@ -221,41 +221,8 @@ const MajorDetail: React.FC<MajorDetailProps> = ({ majorId, onBack }) => {
                 </div>
             </section>
 
-            {/* 2. DIMENSIONES DE LA PRÁCTICA */}
-            <section className="bg-slate-50 rounded-2xl p-8 border border-slate-200">
-                <div className="text-center mb-8">
-                    <h3 className="text-2xl font-display font-bold text-gray-800">Dimensiones de la Práctica</h3>
-                    <p className="text-gray-500 text-sm">Interacción entre los ejes fundamentales</p>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-blue-500">
-                        <h4 className="font-bold text-lg text-gray-800 mb-3 text-center">Académico</h4>
-                        <ul className="text-sm text-gray-600 space-y-2">
-                            <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-500"/>Investigación</li>
-                            <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-500"/>Intervención / Acción</li>
-                            <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-500"/>Reflexión</li>
-                        </ul>
-                    </div>
-                    <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-red-500">
-                        <h4 className="font-bold text-lg text-gray-800 mb-3 text-center">Organizacional</h4>
-                        <ul className="text-sm text-gray-600 space-y-2">
-                            <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-red-500"/>Relación Universidad / Escenario de práctica</li>
-                            <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-red-500"/>Acta de asesoría/tutoría</li>
-                            <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-red-500"/>Procesos y productos</li>
-                            <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-red-500"/>Reuniones interinstitucionales (3 veces al semestre)</li>
-                            <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-red-500"/>Reuniones de evaluación de la práctica</li>
-                        </ul>
-                    </div>
-                    <div className="bg-white p-6 rounded-xl shadow-sm border-t-4 border-green-500">
-                        <h4 className="font-bold text-lg text-gray-800 mb-3 text-center">Estudiantes</h4>
-                        <div className="flex flex-col items-center justify-center h-full pb-4">
-                            <p className="text-sm text-gray-600 font-medium italic text-center">"Dimensión Autorreferencial"</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            {/* 3. PROCESO METODOLÓGICO (TIMELINE) */}
+            {/* 2. PROCESO METODOLÓGICO (TIMELINE) */}
             <section>
                 <div className="flex items-center gap-3 mb-8">
                     <GitMerge size={28} className="text-usc-red" />
@@ -319,7 +286,7 @@ const MajorDetail: React.FC<MajorDetailProps> = ({ majorId, onBack }) => {
                 </div>
             </section>
 
-            {/* 4. APORTES Y GESTIÓN DE PRACTICANTES - LISTADO COMPLETO */}
+            {/* 3. APORTES Y GESTIÓN DE PRACTICANTES - LISTADO COMPLETO */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
                 {/* Aportes */}
