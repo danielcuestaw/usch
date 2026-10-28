@@ -11,9 +11,9 @@ export const USC_ICON_MANUAL_CURSO =  "/images/Icono_manual.png";
 export const USC_ICON_LINEAMIENTO_CURSO =  "/images/Icono_lineamiento.png";
 
 //banners
-export const USC_BANNER_TRABAJO_SOCIAL =  "/images/Banner_trabajo_social.png";
-export const USC_BANNER_COMUNICACION = "/images/Banner_comunicacion.png";
-export const USC_BANNER_PUBLICIDAD = "/images/Banner_publicidad.png";
+export const USC_BANNER_TRABAJO_SOCIAL =  "/images/Banner_trabajo_social.webp";
+export const USC_BANNER_COMUNICACION = "/images/Banner_comunicacion.webp";
+export const USC_BANNER_PUBLICIDAD = "/images/Banner_publicidad.webp";
 
 // User provided logo URL for Header (Navbar)
 export const USC_LOGO_URL =  "/images/Logo.png";
