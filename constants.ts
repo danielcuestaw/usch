@@ -105,7 +105,7 @@ export const MAJORS: Major[] = [
     description: 'Gestión y desarrollo de procesos sociales comunitarios e individuales.',
     color: 'text-usc-blue',
     gradient: 'from-blue-600 to-usc-blue',
-    image: '/images/trabajo_social_01.webp',
+    image: '/images/card_trabajo_social.webp',
     slogan: '"Transformando realidades, tejiendo comunidad"'
   },
   {
@@ -115,7 +115,7 @@ export const MAJORS: Major[] = [
     description: 'Estrategias de comunicación, periodismo y medios digitales.',
     color: 'text-usc-red',
     gradient: 'from-red-500 to-usc-red',
-    image: '/images/comunicacion_social_01.webp',
+    image: '/images/card_comunicacion_s.webp',
     slogan: '"La voz que conecta, la historia que inspira"'
   },
   {
@@ -125,7 +125,7 @@ export const MAJORS: Major[] = [
     description: 'Creatividad estratégica, diseño de marcas y campañas publicitarias.',
     color: 'text-purple-600',
     gradient: 'from-indigo-500 to-purple-600',
-    image: '/images/publicidad_01.webp',
+    image: '/images/card_publicidad.webp',
     slogan: '"Creatividad que impacta, estrategias que trascienden"'
   }
 ];
